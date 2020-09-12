@@ -3795,3 +3795,722 @@ INFO  2020-09-06 16:41:16,420 [7    ] .Mvc.Infrastructure.ObjectResultExecutor -
 INFO  2020-09-06 16:41:16,424 [7    ] c.Infrastructure.ControllerActionInvoker - Executed action ClothingShope.Sessions.SessionAppService.GetCurrentLoginInformations (ClothingShope.Application) in 53.7329ms
 INFO  2020-09-06 16:41:16,426 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ClothingShope.Sessions.SessionAppService.GetCurrentLoginInformations (ClothingShope.Application)'
 INFO  2020-09-06 16:41:16,428 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 79.168ms 200 application/json; charset=utf-8
+DEBUG 2020-09-07 11:36:29,613 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-09-07 11:36:29,839 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-09-07 11:36:29,873 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.Web.Host.Startup.ClothingShopeWebHostModule, ClothingShope.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:36:29,876 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeWebCoreModule, ClothingShope.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:36:29,878 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeApplicationModule, ClothingShope.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:36:29,879 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeCoreModule, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:36:29,879 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:36:29,880 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:36:29,881 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:36:29,882 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:36:29,883 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.EntityFrameworkCore.ClothingShopeEntityFrameworkModule, ClothingShope.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:36:29,884 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:36:29,884 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:36:29,884 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:36:29,885 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:36:29,885 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:36:29,886 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:36:29,890 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-09-07 11:36:30,033 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 11:36:30,033 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 11:36:30,034 [1    ] o.Configuration.LanguageManagementConfig - Converted ClothingShope (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 11:36:30,034 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 11:36:30,694 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: ClothingShope.EntityFrameworkCore.ClothingShopeDbContext, ClothingShope.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:36:32,622 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-09-07 11:36:32,730 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-09-07 11:36:32,748 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-09-07 11:36:32,754 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ClothingShope
+DEBUG 2020-09-07 11:36:32,759 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-09-07 11:36:33,250 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-09-07 11:36:33,592 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[ClothingShope.MultiTenancy.Tenant, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ClothingShope.Authorization.Users.User, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-09-07 11:36:33,717 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2020-09-07 11:36:33,718 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-09-07 11:36:33,733 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Users.Dto.CreateUserDto
+DEBUG 2020-09-07 11:36:33,734 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Users.Dto.UserDto
+DEBUG 2020-09-07 11:36:33,735 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-09-07 11:36:33,736 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-09-07 11:36:33,736 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Roles.Dto.PermissionDto
+DEBUG 2020-09-07 11:36:33,736 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-09-07 11:36:33,736 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.MultiTenancy.Dto.TenantDto
+DEBUG 2020-09-07 11:36:33,736 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.CreateItemDto
+DEBUG 2020-09-07 11:36:33,737 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.ItemDto
+DEBUG 2020-09-07 11:36:33,738 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.UpdateItemDto
+DEBUG 2020-09-07 11:36:33,738 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.CreateItemCategoryDto
+DEBUG 2020-09-07 11:36:33,738 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.ItemCategoryDto
+DEBUG 2020-09-07 11:36:33,738 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.UpdateItemCategoryDto
+INFO  2020-09-07 11:36:37,718 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2020-09-07 11:36:38,316 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\H-Nofal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2020-09-07 11:36:38,488 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2020-09-07 11:36:38,710 [10   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host)'
+INFO  2020-09-07 11:36:46,768 [10   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ClothingShope.Web.Host.Controllers.HomeController (ClothingShope.Web.Host).
+INFO  2020-09-07 11:36:49,571 [7    ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2020-09-07 11:36:49,585 [7    ] c.Infrastructure.ControllerActionInvoker - Executed action ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host) in 2805.5666ms
+INFO  2020-09-07 11:36:49,590 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host)'
+INFO  2020-09-07 11:36:49,630 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 11140.4912ms 302 
+INFO  2020-09-07 11:36:49,635 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2020-09-07 11:36:49,804 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 169.5748ms 200 text/html;charset=utf-8
+INFO  2020-09-07 11:36:49,916 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2020-09-07 11:36:49,921 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2020-09-07 11:36:49,975 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\WorkRepo\repos\ClothingShope\5.7.0\aspnet-core\src\ClothingShope.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2020-09-07 11:36:49,975 [7    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'D:\WorkRepo\repos\ClothingShope\5.7.0\aspnet-core\src\ClothingShope.Web.Host\wwwroot\swagger\ui\abp.swagger.js'
+INFO  2020-09-07 11:36:49,980 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 61.5245ms 200 application/javascript
+INFO  2020-09-07 11:36:49,982 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 61.5332ms 200 application/javascript
+INFO  2020-09-07 11:36:50,719 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2020-09-07 11:36:50,846 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 11:36:50,914 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/favicon-32x32.png  
+INFO  2020-09-07 11:36:50,925 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2020-09-07 11:36:50,928 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 15.3203ms 200 image/png
+INFO  2020-09-07 11:36:51,239 [7    ] uthentication.JwtBearer.JwtBearerHandler - Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+INFO  2020-09-07 11:36:51,240 [10   ] uthentication.JwtBearer.JwtBearerHandler - Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+INFO  2020-09-07 11:36:51,245 [7    ] uthentication.JwtBearer.JwtBearerHandler - JwtBearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+INFO  2020-09-07 11:36:51,248 [10   ] uthentication.JwtBearer.JwtBearerHandler - JwtBearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+INFO  2020-09-07 11:36:51,252 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host)'
+INFO  2020-09-07 11:36:51,269 [7    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller ClothingShope.Web.Host.Controllers.AntiForgeryController (ClothingShope.Web.Host).
+INFO  2020-09-07 11:36:51,305 [7    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-09-07 11:36:51,395 [7    ] c.Infrastructure.ControllerActionInvoker - Executed action ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host) in 123.5006ms
+INFO  2020-09-07 11:36:51,399 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host)'
+INFO  2020-09-07 11:36:51,404 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 685.4444ms 200 application/json; charset=utf-8
+INFO  2020-09-07 11:36:51,459 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 619.2217ms 200 application/json;charset=utf-8
+INFO  2020-09-07 11:37:21,310 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2020-09-07 11:37:21,331 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 20.7742ms 200 text/html;charset=utf-8
+DEBUG 2020-09-07 11:46:16,611 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-09-07 11:46:16,764 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-09-07 11:46:16,820 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.Web.Host.Startup.ClothingShopeWebHostModule, ClothingShope.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:46:16,825 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeWebCoreModule, ClothingShope.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:46:16,826 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeApplicationModule, ClothingShope.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:46:16,827 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeCoreModule, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:46:16,827 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:46:16,828 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:46:16,828 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:46:16,829 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:46:16,830 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.EntityFrameworkCore.ClothingShopeEntityFrameworkModule, ClothingShope.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:46:16,830 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:46:16,831 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:46:16,832 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:46:16,832 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:46:16,833 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:46:16,833 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:46:16,839 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-09-07 11:46:16,994 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 11:46:16,994 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 11:46:16,994 [1    ] o.Configuration.LanguageManagementConfig - Converted ClothingShope (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 11:46:16,994 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 11:46:17,672 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: ClothingShope.EntityFrameworkCore.ClothingShopeDbContext, ClothingShope.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 11:46:18,746 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-09-07 11:46:18,864 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-09-07 11:46:18,895 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-09-07 11:46:18,914 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ClothingShope
+DEBUG 2020-09-07 11:46:18,929 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-09-07 11:46:19,075 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-09-07 11:46:19,141 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[ClothingShope.MultiTenancy.Tenant, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ClothingShope.Authorization.Users.User, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-09-07 11:46:19,240 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2020-09-07 11:46:19,240 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-09-07 11:46:19,256 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Users.Dto.CreateUserDto
+DEBUG 2020-09-07 11:46:19,258 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Users.Dto.UserDto
+DEBUG 2020-09-07 11:46:19,258 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-09-07 11:46:19,259 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-09-07 11:46:19,259 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Roles.Dto.PermissionDto
+DEBUG 2020-09-07 11:46:19,259 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-09-07 11:46:19,259 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.MultiTenancy.Dto.TenantDto
+DEBUG 2020-09-07 11:46:19,259 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.CreateItemDto
+DEBUG 2020-09-07 11:46:19,261 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.ItemDto
+DEBUG 2020-09-07 11:46:19,261 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.UpdateItemDto
+DEBUG 2020-09-07 11:46:19,261 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.CreateItemCategoryDto
+DEBUG 2020-09-07 11:46:19,261 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.ItemCategoryDto
+DEBUG 2020-09-07 11:46:19,261 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.UpdateItemCategoryDto
+INFO  2020-09-07 11:46:24,461 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2020-09-07 11:46:24,895 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\H-Nofal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2020-09-07 11:46:24,994 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2020-09-07 11:46:25,173 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host)'
+INFO  2020-09-07 11:46:27,694 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ClothingShope.Web.Host.Controllers.HomeController (ClothingShope.Web.Host).
+INFO  2020-09-07 11:46:28,934 [9    ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2020-09-07 11:46:28,945 [9    ] c.Infrastructure.ControllerActionInvoker - Executed action ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host) in 1243.1829ms
+INFO  2020-09-07 11:46:28,946 [9    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host)'
+INFO  2020-09-07 11:46:28,973 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 3980.5221ms 302 
+INFO  2020-09-07 11:46:28,979 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2020-09-07 11:46:29,107 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 127.4933ms 200 text/html;charset=utf-8
+INFO  2020-09-07 11:46:29,363 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2020-09-07 11:46:29,444 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 11:46:29,658 [10   ] uthentication.JwtBearer.JwtBearerHandler - Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+INFO  2020-09-07 11:46:29,658 [13   ] uthentication.JwtBearer.JwtBearerHandler - Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+INFO  2020-09-07 11:46:29,665 [10   ] uthentication.JwtBearer.JwtBearerHandler - JwtBearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+INFO  2020-09-07 11:46:29,665 [13   ] uthentication.JwtBearer.JwtBearerHandler - JwtBearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+INFO  2020-09-07 11:46:29,666 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host)'
+INFO  2020-09-07 11:46:29,680 [13   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller ClothingShope.Web.Host.Controllers.AntiForgeryController (ClothingShope.Web.Host).
+INFO  2020-09-07 11:46:29,722 [13   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-09-07 11:46:29,857 [13   ] c.Infrastructure.ControllerActionInvoker - Executed action ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host) in 176.7726ms
+INFO  2020-09-07 11:46:29,858 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host)'
+INFO  2020-09-07 11:46:29,858 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 495.4175ms 200 application/json; charset=utf-8
+INFO  2020-09-07 11:46:29,948 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 504.5099ms 200 application/json;charset=utf-8
+INFO  2020-09-07 11:47:10,382 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 11:47:10,440 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 57.4468ms 200 application/json;charset=utf-8
+DEBUG 2020-09-07 12:06:46,483 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-09-07 12:06:46,570 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-09-07 12:06:46,582 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.Web.Host.Startup.ClothingShopeWebHostModule, ClothingShope.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 12:06:46,583 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeWebCoreModule, ClothingShope.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 12:06:46,584 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeApplicationModule, ClothingShope.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 12:06:46,584 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeCoreModule, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 12:06:46,584 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 12:06:46,584 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 12:06:46,584 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 12:06:46,585 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 12:06:46,585 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.EntityFrameworkCore.ClothingShopeEntityFrameworkModule, ClothingShope.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 12:06:46,585 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 12:06:46,585 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 12:06:46,586 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 12:06:46,586 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 12:06:46,586 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 12:06:46,586 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 12:06:46,588 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-09-07 12:06:46,652 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 12:06:46,652 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 12:06:46,652 [1    ] o.Configuration.LanguageManagementConfig - Converted ClothingShope (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 12:06:46,652 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 12:06:46,989 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: ClothingShope.EntityFrameworkCore.ClothingShopeDbContext, ClothingShope.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 12:06:47,838 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-09-07 12:06:47,872 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-09-07 12:06:47,883 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-09-07 12:06:47,888 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ClothingShope
+DEBUG 2020-09-07 12:06:47,895 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-09-07 12:06:48,123 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-09-07 12:06:48,243 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[ClothingShope.MultiTenancy.Tenant, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ClothingShope.Authorization.Users.User, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-09-07 12:06:48,290 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2020-09-07 12:06:48,290 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-09-07 12:06:48,296 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Users.Dto.CreateUserDto
+DEBUG 2020-09-07 12:06:48,296 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Users.Dto.UserDto
+DEBUG 2020-09-07 12:06:48,296 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-09-07 12:06:48,297 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-09-07 12:06:48,297 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Roles.Dto.PermissionDto
+DEBUG 2020-09-07 12:06:48,297 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-09-07 12:06:48,297 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.MultiTenancy.Dto.TenantDto
+DEBUG 2020-09-07 12:06:48,297 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.CreateItemDto
+DEBUG 2020-09-07 12:06:48,297 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.ItemDto
+DEBUG 2020-09-07 12:06:48,297 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.UpdateItemDto
+DEBUG 2020-09-07 12:06:48,298 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.CreateItemCategoryDto
+DEBUG 2020-09-07 12:06:48,298 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.ItemCategoryDto
+DEBUG 2020-09-07 12:06:48,298 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.UpdateItemCategoryDto
+INFO  2020-09-07 12:06:51,094 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2020-09-07 12:06:51,401 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\H-Nofal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2020-09-07 12:06:51,489 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2020-09-07 12:06:51,604 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host)'
+INFO  2020-09-07 12:06:55,299 [15   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ClothingShope.Web.Host.Controllers.HomeController (ClothingShope.Web.Host).
+INFO  2020-09-07 12:06:56,460 [15   ] c.Infrastructure.ControllerActionInvoker - Executing action method ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host) - Validation state: Valid
+INFO  2020-09-07 12:06:56,467 [15   ] c.Infrastructure.ControllerActionInvoker - Executed action method ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.4855ms.
+INFO  2020-09-07 12:06:56,706 [10   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2020-09-07 12:06:56,715 [10   ] c.Infrastructure.ControllerActionInvoker - Executed action ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host) in 1409.2219ms
+INFO  2020-09-07 12:06:56,717 [10   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host)'
+INFO  2020-09-07 12:06:56,737 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5248.4139ms 302 
+INFO  2020-09-07 12:06:56,749 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2020-09-07 12:06:56,814 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 64.1231ms 200 text/html;charset=utf-8
+INFO  2020-09-07 12:06:56,994 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2020-09-07 12:06:57,055 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 12:06:57,216 [4    ] uthentication.JwtBearer.JwtBearerHandler - Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+INFO  2020-09-07 12:06:57,216 [15   ] uthentication.JwtBearer.JwtBearerHandler - Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+INFO  2020-09-07 12:06:57,223 [15   ] uthentication.JwtBearer.JwtBearerHandler - JwtBearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+INFO  2020-09-07 12:06:57,223 [4    ] uthentication.JwtBearer.JwtBearerHandler - JwtBearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+INFO  2020-09-07 12:06:57,226 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host)'
+INFO  2020-09-07 12:06:57,237 [15   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller ClothingShope.Web.Host.Controllers.AntiForgeryController (ClothingShope.Web.Host).
+INFO  2020-09-07 12:06:57,266 [15   ] c.Infrastructure.ControllerActionInvoker - Executing action method ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host) - Validation state: Valid
+INFO  2020-09-07 12:06:57,278 [15   ] c.Infrastructure.ControllerActionInvoker - Executed action method ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 9.6653ms.
+INFO  2020-09-07 12:06:57,295 [13   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-09-07 12:06:57,412 [13   ] c.Infrastructure.ControllerActionInvoker - Executed action ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host) in 172.4191ms
+INFO  2020-09-07 12:06:57,415 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host)'
+INFO  2020-09-07 12:06:57,419 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 423.3011ms 200 application/json; charset=utf-8
+INFO  2020-09-07 12:06:57,499 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 443.8377ms 200 application/json;charset=utf-8
+DEBUG 2020-09-07 13:13:45,857 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-09-07 13:13:46,019 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-09-07 13:13:46,071 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.Web.Host.Startup.ClothingShopeWebHostModule, ClothingShope.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:13:46,076 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeWebCoreModule, ClothingShope.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:13:46,077 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeApplicationModule, ClothingShope.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:13:46,078 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeCoreModule, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:13:46,079 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:13:46,080 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:13:46,080 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:13:46,081 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:13:46,082 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.EntityFrameworkCore.ClothingShopeEntityFrameworkModule, ClothingShope.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:13:46,082 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:13:46,083 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:13:46,083 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:13:46,084 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:13:46,084 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:13:46,085 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:13:46,090 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-09-07 13:13:46,246 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 13:13:46,246 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 13:13:46,246 [1    ] o.Configuration.LanguageManagementConfig - Converted ClothingShope (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 13:13:46,246 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 13:13:46,852 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: ClothingShope.EntityFrameworkCore.ClothingShopeDbContext, ClothingShope.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:13:48,826 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-09-07 13:13:48,913 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-09-07 13:13:48,932 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-09-07 13:13:48,940 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ClothingShope
+DEBUG 2020-09-07 13:13:48,950 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-09-07 13:13:49,632 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-09-07 13:13:49,850 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[ClothingShope.MultiTenancy.Tenant, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ClothingShope.Authorization.Users.User, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-09-07 13:13:49,947 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2020-09-07 13:13:49,947 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-09-07 13:13:49,958 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Users.Dto.CreateUserDto
+DEBUG 2020-09-07 13:13:49,960 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Users.Dto.UserDto
+DEBUG 2020-09-07 13:13:49,960 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-09-07 13:13:49,961 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-09-07 13:13:49,961 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Roles.Dto.PermissionDto
+DEBUG 2020-09-07 13:13:49,961 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-09-07 13:13:49,961 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.MultiTenancy.Dto.TenantDto
+DEBUG 2020-09-07 13:13:49,961 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.CreateItemDto
+DEBUG 2020-09-07 13:13:49,963 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.ItemDto
+DEBUG 2020-09-07 13:13:49,963 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.UpdateItemDto
+DEBUG 2020-09-07 13:13:49,963 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.CreateItemCategoryDto
+DEBUG 2020-09-07 13:13:49,963 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.ItemCategoryDto
+DEBUG 2020-09-07 13:13:49,964 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.UpdateItemCategoryDto
+INFO  2020-09-07 13:13:57,462 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2020-09-07 13:13:58,078 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\H-Nofal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2020-09-07 13:13:58,257 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2020-09-07 13:13:58,475 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host)'
+INFO  2020-09-07 13:14:16,092 [8    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ClothingShope.Web.Host.Controllers.HomeController (ClothingShope.Web.Host).
+INFO  2020-09-07 13:14:20,657 [8    ] c.Infrastructure.ControllerActionInvoker - Executing action method ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host) - Validation state: Valid
+INFO  2020-09-07 13:14:20,678 [8    ] c.Infrastructure.ControllerActionInvoker - Executed action method ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.9625ms.
+INFO  2020-09-07 13:14:21,530 [5    ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2020-09-07 13:14:21,599 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host) in 5444.7671ms
+INFO  2020-09-07 13:14:21,619 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host)'
+INFO  2020-09-07 13:14:21,756 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 23443.415ms 302 
+INFO  2020-09-07 13:14:21,828 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2020-09-07 13:14:22,075 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 266.9987ms 200 text/html;charset=utf-8
+INFO  2020-09-07 13:14:22,533 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2020-09-07 13:14:22,930 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 13:14:23,724 [5    ] uthentication.JwtBearer.JwtBearerHandler - Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+INFO  2020-09-07 13:14:23,724 [10   ] uthentication.JwtBearer.JwtBearerHandler - Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+INFO  2020-09-07 13:14:23,760 [5    ] uthentication.JwtBearer.JwtBearerHandler - JwtBearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+INFO  2020-09-07 13:14:23,760 [10   ] uthentication.JwtBearer.JwtBearerHandler - JwtBearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+INFO  2020-09-07 13:14:23,771 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host)'
+INFO  2020-09-07 13:14:23,951 [5    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller ClothingShope.Web.Host.Controllers.AntiForgeryController (ClothingShope.Web.Host).
+INFO  2020-09-07 13:14:24,074 [5    ] c.Infrastructure.ControllerActionInvoker - Executing action method ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host) - Validation state: Valid
+INFO  2020-09-07 13:14:24,114 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action method ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 14.3497ms.
+INFO  2020-09-07 13:14:24,357 [5    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-09-07 13:14:24,703 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host) in 692.5832ms
+INFO  2020-09-07 13:14:24,703 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1799.9027ms 200 application/json;charset=utf-8
+INFO  2020-09-07 13:14:24,713 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host)'
+INFO  2020-09-07 13:14:24,718 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2284.4728ms 200 application/json; charset=utf-8
+INFO  2020-09-07 13:19:36,175 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 13:19:36,203 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 28.0601ms 200 application/json;charset=utf-8
+INFO  2020-09-07 13:21:20,518 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 13:21:20,550 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 31.4654ms 200 application/json;charset=utf-8
+DEBUG 2020-09-07 13:54:25,243 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-09-07 13:54:25,334 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-09-07 13:54:25,349 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.Web.Host.Startup.ClothingShopeWebHostModule, ClothingShope.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:54:25,351 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeWebCoreModule, ClothingShope.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:54:25,352 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeApplicationModule, ClothingShope.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:54:25,352 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeCoreModule, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:54:25,352 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:54:25,353 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:54:25,353 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:54:25,353 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:54:25,354 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.EntityFrameworkCore.ClothingShopeEntityFrameworkModule, ClothingShope.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:54:25,354 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:54:25,354 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:54:25,355 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:54:25,355 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:54:25,355 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:54:25,355 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:54:25,358 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-09-07 13:54:25,429 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 13:54:25,429 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 13:54:25,430 [1    ] o.Configuration.LanguageManagementConfig - Converted ClothingShope (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 13:54:25,430 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 13:54:25,895 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: ClothingShope.EntityFrameworkCore.ClothingShopeDbContext, ClothingShope.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 13:54:26,880 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-09-07 13:54:26,926 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-09-07 13:54:26,939 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-09-07 13:54:26,950 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ClothingShope
+DEBUG 2020-09-07 13:54:26,956 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-09-07 13:54:27,162 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-09-07 13:54:27,287 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[ClothingShope.MultiTenancy.Tenant, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ClothingShope.Authorization.Users.User, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-09-07 13:54:27,336 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2020-09-07 13:54:27,336 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-09-07 13:54:27,341 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Users.Dto.CreateUserDto
+DEBUG 2020-09-07 13:54:27,342 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Users.Dto.UserDto
+DEBUG 2020-09-07 13:54:27,342 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-09-07 13:54:27,342 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-09-07 13:54:27,342 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Roles.Dto.PermissionDto
+DEBUG 2020-09-07 13:54:27,342 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-09-07 13:54:27,343 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.MultiTenancy.Dto.TenantDto
+DEBUG 2020-09-07 13:54:27,343 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.CreateItemDto
+DEBUG 2020-09-07 13:54:27,343 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.ItemDto
+DEBUG 2020-09-07 13:54:27,343 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.UpdateItemDto
+DEBUG 2020-09-07 13:54:27,343 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.CreateItemCategoryDto
+DEBUG 2020-09-07 13:54:27,343 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.ItemCategoryDto
+DEBUG 2020-09-07 13:54:27,343 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.UpdateItemCategoryDto
+INFO  2020-09-07 13:54:30,132 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2020-09-07 13:54:30,465 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\H-Nofal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2020-09-07 13:54:30,545 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2020-09-07 13:54:30,657 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host)'
+INFO  2020-09-07 13:54:34,202 [15   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ClothingShope.Web.Host.Controllers.HomeController (ClothingShope.Web.Host).
+INFO  2020-09-07 13:54:35,381 [15   ] c.Infrastructure.ControllerActionInvoker - Executing action method ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host) - Validation state: Valid
+INFO  2020-09-07 13:54:35,388 [15   ] c.Infrastructure.ControllerActionInvoker - Executed action method ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.7741ms.
+INFO  2020-09-07 13:54:35,654 [4    ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2020-09-07 13:54:35,662 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host) in 1454.0563ms
+INFO  2020-09-07 13:54:35,665 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host)'
+INFO  2020-09-07 13:54:35,687 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5142.188ms 302 
+INFO  2020-09-07 13:54:35,690 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2020-09-07 13:54:35,774 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 83.5065ms 200 text/html;charset=utf-8
+INFO  2020-09-07 13:54:36,705 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2020-09-07 13:54:36,771 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 13:54:36,958 [4    ] uthentication.JwtBearer.JwtBearerHandler - Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+INFO  2020-09-07 13:54:36,958 [7    ] uthentication.JwtBearer.JwtBearerHandler - Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+INFO  2020-09-07 13:54:36,969 [7    ] uthentication.JwtBearer.JwtBearerHandler - JwtBearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+INFO  2020-09-07 13:54:36,969 [4    ] uthentication.JwtBearer.JwtBearerHandler - JwtBearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+INFO  2020-09-07 13:54:36,971 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host)'
+INFO  2020-09-07 13:54:36,983 [7    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller ClothingShope.Web.Host.Controllers.AntiForgeryController (ClothingShope.Web.Host).
+INFO  2020-09-07 13:54:37,008 [7    ] c.Infrastructure.ControllerActionInvoker - Executing action method ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host) - Validation state: Valid
+INFO  2020-09-07 13:54:37,024 [7    ] c.Infrastructure.ControllerActionInvoker - Executed action method ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 13.9402ms.
+INFO  2020-09-07 13:54:37,051 [13   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-09-07 13:54:37,174 [13   ] c.Infrastructure.ControllerActionInvoker - Executed action ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host) in 188.1821ms
+INFO  2020-09-07 13:54:37,177 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host)'
+INFO  2020-09-07 13:54:37,181 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 475.5839ms 200 application/json; charset=utf-8
+INFO  2020-09-07 13:54:37,257 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 487.6257ms 200 application/json;charset=utf-8
+INFO  2020-09-07 13:55:15,912 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 13:55:15,943 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 31.8249ms 200 application/json;charset=utf-8
+INFO  2020-09-07 13:55:19,466 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 13:55:19,501 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 35.1227ms 200 application/json;charset=utf-8
+DEBUG 2020-09-07 15:04:41,112 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-09-07 15:04:41,235 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-09-07 15:04:41,261 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.Web.Host.Startup.ClothingShopeWebHostModule, ClothingShope.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:04:41,263 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeWebCoreModule, ClothingShope.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:04:41,264 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeApplicationModule, ClothingShope.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:04:41,264 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeCoreModule, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:04:41,264 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:04:41,265 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:04:41,265 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:04:41,265 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:04:41,266 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.EntityFrameworkCore.ClothingShopeEntityFrameworkModule, ClothingShope.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:04:41,266 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:04:41,266 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:04:41,266 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:04:41,267 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:04:41,267 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:04:41,267 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:04:41,271 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-09-07 15:04:41,398 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 15:04:41,398 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 15:04:41,398 [1    ] o.Configuration.LanguageManagementConfig - Converted ClothingShope (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 15:04:41,398 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 15:04:41,950 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: ClothingShope.EntityFrameworkCore.ClothingShopeDbContext, ClothingShope.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:04:43,447 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-09-07 15:04:43,497 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-09-07 15:04:43,519 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-09-07 15:04:43,527 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ClothingShope
+DEBUG 2020-09-07 15:04:43,533 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-09-07 15:04:43,924 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-09-07 15:04:44,191 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[ClothingShope.MultiTenancy.Tenant, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ClothingShope.Authorization.Users.User, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-09-07 15:04:44,264 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2020-09-07 15:04:44,264 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-09-07 15:04:44,270 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Users.Dto.CreateUserDto
+DEBUG 2020-09-07 15:04:44,271 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Users.Dto.UserDto
+DEBUG 2020-09-07 15:04:44,272 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-09-07 15:04:44,272 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-09-07 15:04:44,272 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Roles.Dto.PermissionDto
+DEBUG 2020-09-07 15:04:44,272 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-09-07 15:04:44,273 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.MultiTenancy.Dto.TenantDto
+DEBUG 2020-09-07 15:04:44,273 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.CreateItemDto
+DEBUG 2020-09-07 15:04:44,274 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.ItemDto
+DEBUG 2020-09-07 15:04:44,274 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.UpdateItemDto
+DEBUG 2020-09-07 15:04:44,274 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.CreateItemCategoryDto
+DEBUG 2020-09-07 15:04:44,274 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.ItemCategoryDto
+DEBUG 2020-09-07 15:04:44,274 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.UpdateItemCategoryDto
+INFO  2020-09-07 15:04:47,589 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2020-09-07 15:04:48,050 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\H-Nofal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2020-09-07 15:04:48,170 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2020-09-07 15:04:48,325 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host)'
+INFO  2020-09-07 15:04:54,148 [15   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ClothingShope.Web.Host.Controllers.HomeController (ClothingShope.Web.Host).
+INFO  2020-09-07 15:04:55,875 [15   ] c.Infrastructure.ControllerActionInvoker - Executing action method ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host) - Validation state: Valid
+INFO  2020-09-07 15:04:55,884 [15   ] c.Infrastructure.ControllerActionInvoker - Executed action method ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.5504ms.
+INFO  2020-09-07 15:04:56,110 [12   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2020-09-07 15:04:56,124 [12   ] c.Infrastructure.ControllerActionInvoker - Executed action ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host) in 1965.9007ms
+INFO  2020-09-07 15:04:56,129 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host)'
+INFO  2020-09-07 15:04:56,156 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 7986.5492ms 302 
+INFO  2020-09-07 15:04:56,178 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2020-09-07 15:04:56,279 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 102.1733ms 200 text/html;charset=utf-8
+INFO  2020-09-07 15:04:56,707 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2020-09-07 15:04:56,794 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 15:04:56,958 [7    ] uthentication.JwtBearer.JwtBearerHandler - Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+INFO  2020-09-07 15:04:56,958 [12   ] uthentication.JwtBearer.JwtBearerHandler - Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+INFO  2020-09-07 15:04:56,970 [7    ] uthentication.JwtBearer.JwtBearerHandler - JwtBearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+INFO  2020-09-07 15:04:56,970 [12   ] uthentication.JwtBearer.JwtBearerHandler - JwtBearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+INFO  2020-09-07 15:04:56,974 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host)'
+INFO  2020-09-07 15:04:56,984 [7    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller ClothingShope.Web.Host.Controllers.AntiForgeryController (ClothingShope.Web.Host).
+INFO  2020-09-07 15:04:57,016 [7    ] c.Infrastructure.ControllerActionInvoker - Executing action method ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host) - Validation state: Valid
+INFO  2020-09-07 15:04:57,030 [7    ] c.Infrastructure.ControllerActionInvoker - Executed action method ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 10.7733ms.
+INFO  2020-09-07 15:04:57,060 [16   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-09-07 15:04:57,158 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host) in 169.9404ms
+INFO  2020-09-07 15:04:57,161 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host)'
+INFO  2020-09-07 15:04:57,165 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 460.0938ms 200 application/json; charset=utf-8
+INFO  2020-09-07 15:04:57,215 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 421.1942ms 200 application/json;charset=utf-8
+DEBUG 2020-09-07 15:17:58,437 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-09-07 15:17:58,540 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-09-07 15:17:58,564 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.Web.Host.Startup.ClothingShopeWebHostModule, ClothingShope.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:17:58,567 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeWebCoreModule, ClothingShope.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:17:58,567 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeApplicationModule, ClothingShope.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:17:58,568 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeCoreModule, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:17:58,568 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:17:58,569 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:17:58,569 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:17:58,570 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:17:58,571 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.EntityFrameworkCore.ClothingShopeEntityFrameworkModule, ClothingShope.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:17:58,571 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:17:58,571 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:17:58,572 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:17:58,572 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:17:58,573 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:17:58,573 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:17:58,577 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-09-07 15:17:58,681 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 15:17:58,681 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 15:17:58,681 [1    ] o.Configuration.LanguageManagementConfig - Converted ClothingShope (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 15:17:58,681 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 15:17:59,248 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: ClothingShope.EntityFrameworkCore.ClothingShopeDbContext, ClothingShope.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:18:01,410 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-09-07 15:18:01,502 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-09-07 15:18:01,536 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-09-07 15:18:01,547 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ClothingShope
+DEBUG 2020-09-07 15:18:01,562 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-09-07 15:18:02,030 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-09-07 15:18:02,327 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[ClothingShope.MultiTenancy.Tenant, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ClothingShope.Authorization.Users.User, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-09-07 15:18:02,441 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2020-09-07 15:18:02,441 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-09-07 15:18:02,454 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Users.Dto.CreateUserDto
+DEBUG 2020-09-07 15:18:02,456 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Users.Dto.UserDto
+DEBUG 2020-09-07 15:18:02,456 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-09-07 15:18:02,457 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-09-07 15:18:02,457 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Roles.Dto.PermissionDto
+DEBUG 2020-09-07 15:18:02,457 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-09-07 15:18:02,457 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.MultiTenancy.Dto.TenantDto
+DEBUG 2020-09-07 15:18:02,457 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.CreateItemDto
+DEBUG 2020-09-07 15:18:02,458 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.ItemDto
+DEBUG 2020-09-07 15:18:02,459 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.UpdateItemDto
+DEBUG 2020-09-07 15:18:02,459 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.CreateItemCategoryDto
+DEBUG 2020-09-07 15:18:02,459 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.ItemCategoryDto
+DEBUG 2020-09-07 15:18:02,459 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.UpdateItemCategoryDto
+INFO  2020-09-07 15:18:08,050 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2020-09-07 15:18:08,634 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\H-Nofal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2020-09-07 15:18:08,802 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2020-09-07 15:18:09,033 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host)'
+INFO  2020-09-07 15:18:17,004 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ClothingShope.Web.Host.Controllers.HomeController (ClothingShope.Web.Host).
+INFO  2020-09-07 15:18:19,452 [4    ] c.Infrastructure.ControllerActionInvoker - Executing action method ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host) - Validation state: Valid
+INFO  2020-09-07 15:18:19,467 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action method ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.8994ms.
+INFO  2020-09-07 15:18:19,987 [13   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2020-09-07 15:18:20,007 [13   ] c.Infrastructure.ControllerActionInvoker - Executed action ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host) in 2989.9011ms
+INFO  2020-09-07 15:18:20,013 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host)'
+INFO  2020-09-07 15:18:20,062 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 11259.2165ms 302 
+INFO  2020-09-07 15:18:20,067 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2020-09-07 15:18:20,230 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 164.2135ms 200 text/html;charset=utf-8
+INFO  2020-09-07 15:18:20,700 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2020-09-07 15:18:20,761 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 15:18:21,066 [4    ] uthentication.JwtBearer.JwtBearerHandler - Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+INFO  2020-09-07 15:18:21,066 [10   ] uthentication.JwtBearer.JwtBearerHandler - Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+INFO  2020-09-07 15:18:21,082 [4    ] uthentication.JwtBearer.JwtBearerHandler - JwtBearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+INFO  2020-09-07 15:18:21,082 [10   ] uthentication.JwtBearer.JwtBearerHandler - JwtBearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+INFO  2020-09-07 15:18:21,088 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host)'
+INFO  2020-09-07 15:18:21,107 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller ClothingShope.Web.Host.Controllers.AntiForgeryController (ClothingShope.Web.Host).
+INFO  2020-09-07 15:18:21,152 [4    ] c.Infrastructure.ControllerActionInvoker - Executing action method ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host) - Validation state: Valid
+INFO  2020-09-07 15:18:21,175 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action method ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 16.595ms.
+INFO  2020-09-07 15:18:21,215 [12   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-09-07 15:18:21,392 [12   ] c.Infrastructure.ControllerActionInvoker - Executed action ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host) in 281.3673ms
+INFO  2020-09-07 15:18:21,396 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host)'
+INFO  2020-09-07 15:18:21,402 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 699.9432ms 200 application/json; charset=utf-8
+INFO  2020-09-07 15:18:21,485 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 723.3725ms 200 application/json;charset=utf-8
+DEBUG 2020-09-07 15:32:01,100 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-09-07 15:32:01,268 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-09-07 15:32:01,302 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.Web.Host.Startup.ClothingShopeWebHostModule, ClothingShope.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:32:01,308 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeWebCoreModule, ClothingShope.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:32:01,310 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeApplicationModule, ClothingShope.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:32:01,311 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.ClothingShopeCoreModule, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:32:01,311 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:32:01,312 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:32:01,312 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:32:01,313 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:32:01,314 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ClothingShope.EntityFrameworkCore.ClothingShopeEntityFrameworkModule, ClothingShope.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:32:01,315 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:32:01,315 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:32:01,316 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:32:01,317 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:32:01,317 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:32:01,318 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:32:01,325 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-09-07 15:32:01,499 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 15:32:01,499 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 15:32:01,499 [1    ] o.Configuration.LanguageManagementConfig - Converted ClothingShope (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 15:32:01,499 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-07 15:32:02,061 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: ClothingShope.EntityFrameworkCore.ClothingShopeDbContext, ClothingShope.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-07 15:32:04,332 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-09-07 15:32:04,466 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-09-07 15:32:04,505 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-09-07 15:32:04,518 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ClothingShope
+DEBUG 2020-09-07 15:32:04,532 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-09-07 15:32:05,159 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-09-07 15:32:05,487 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[ClothingShope.MultiTenancy.Tenant, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ClothingShope.Authorization.Users.User, ClothingShope.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-09-07 15:32:05,610 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2020-09-07 15:32:05,610 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-09-07 15:32:05,622 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Users.Dto.CreateUserDto
+DEBUG 2020-09-07 15:32:05,624 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Users.Dto.UserDto
+DEBUG 2020-09-07 15:32:05,625 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-09-07 15:32:05,625 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-09-07 15:32:05,625 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.Roles.Dto.PermissionDto
+DEBUG 2020-09-07 15:32:05,625 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-09-07 15:32:05,625 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.MultiTenancy.Dto.TenantDto
+DEBUG 2020-09-07 15:32:05,625 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.CreateItemDto
+DEBUG 2020-09-07 15:32:05,626 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.ItemDto
+DEBUG 2020-09-07 15:32:05,627 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.UpdateItemDto
+DEBUG 2020-09-07 15:32:05,627 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.CreateItemCategoryDto
+DEBUG 2020-09-07 15:32:05,627 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.ItemCategoryDto
+DEBUG 2020-09-07 15:32:05,627 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ClothingShope.ItemCatogriesAppServices.Dto.UpdateItemCategoryDto
+INFO  2020-09-07 15:32:11,697 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2020-09-07 15:32:12,434 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\H-Nofal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2020-09-07 15:32:12,634 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2020-09-07 15:32:12,917 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host)'
+INFO  2020-09-07 15:32:22,030 [7    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ClothingShope.Web.Host.Controllers.HomeController (ClothingShope.Web.Host).
+INFO  2020-09-07 15:32:24,694 [7    ] c.Infrastructure.ControllerActionInvoker - Executing action method ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host) - Validation state: Valid
+INFO  2020-09-07 15:32:24,708 [7    ] c.Infrastructure.ControllerActionInvoker - Executed action method ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.8163ms.
+INFO  2020-09-07 15:32:25,200 [12   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2020-09-07 15:32:25,218 [12   ] c.Infrastructure.ControllerActionInvoker - Executed action ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host) in 3174.9368ms
+INFO  2020-09-07 15:32:25,224 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ClothingShope.Web.Host.Controllers.HomeController.Index (ClothingShope.Web.Host)'
+INFO  2020-09-07 15:32:25,272 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 12640.2655ms 302 
+INFO  2020-09-07 15:32:25,281 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2020-09-07 15:32:25,466 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 185.0164ms 200 text/html;charset=utf-8
+INFO  2020-09-07 15:32:26,713 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2020-09-07 15:32:26,799 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 15:32:27,107 [11   ] uthentication.JwtBearer.JwtBearerHandler - Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+INFO  2020-09-07 15:32:27,107 [7    ] uthentication.JwtBearer.JwtBearerHandler - Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+INFO  2020-09-07 15:32:27,123 [7    ] uthentication.JwtBearer.JwtBearerHandler - JwtBearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+INFO  2020-09-07 15:32:27,123 [11   ] uthentication.JwtBearer.JwtBearerHandler - JwtBearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+INFO  2020-09-07 15:32:27,127 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host)'
+INFO  2020-09-07 15:32:27,146 [11   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller ClothingShope.Web.Host.Controllers.AntiForgeryController (ClothingShope.Web.Host).
+INFO  2020-09-07 15:32:27,195 [11   ] c.Infrastructure.ControllerActionInvoker - Executing action method ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host) - Validation state: Valid
+INFO  2020-09-07 15:32:27,215 [11   ] c.Infrastructure.ControllerActionInvoker - Executed action method ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 15.1909ms.
+INFO  2020-09-07 15:32:27,271 [10   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-09-07 15:32:27,446 [10   ] c.Infrastructure.ControllerActionInvoker - Executed action ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host) in 295.9918ms
+INFO  2020-09-07 15:32:27,450 [10   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ClothingShope.Web.Host.Controllers.AntiForgeryController.SetCookie (ClothingShope.Web.Host)'
+INFO  2020-09-07 15:32:27,454 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 742.3522ms 200 application/json; charset=utf-8
+INFO  2020-09-07 15:32:27,527 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 730.0171ms 200 application/json;charset=utf-8
+INFO  2020-09-07 15:37:08,222 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 15:37:08,285 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 63.2976ms 200 application/json;charset=utf-8
+INFO  2020-09-07 15:39:45,452 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 15:39:45,511 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 60.6835ms 200 application/json;charset=utf-8
+INFO  2020-09-07 15:41:35,378 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 15:41:35,412 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 23.7652ms 200 application/json;charset=utf-8
+INFO  2020-09-07 15:41:53,091 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 15:41:53,126 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 36.0154ms 200 application/json;charset=utf-8
+INFO  2020-09-07 15:41:57,224 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 15:41:57,244 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 19.856ms 200 application/json;charset=utf-8
+INFO  2020-09-07 15:42:16,401 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 15:42:16,418 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 16.9097ms 200 application/json;charset=utf-8
+INFO  2020-09-07 15:42:44,253 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 15:42:44,270 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 17.3651ms 200 application/json;charset=utf-8
+INFO  2020-09-07 15:43:52,334 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 15:43:52,357 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 22.8007ms 200 application/json;charset=utf-8
+INFO  2020-09-07 15:52:52,898 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 15:52:52,930 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 22.262ms 200 application/json;charset=utf-8
+INFO  2020-09-07 15:54:13,874 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 15:54:13,913 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 38.7665ms 200 application/json;charset=utf-8
+INFO  2020-09-07 15:54:29,275 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 15:54:29,296 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 20.2079ms 200 application/json;charset=utf-8
+INFO  2020-09-07 15:56:40,321 [39   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 15:56:40,352 [39   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 29.4431ms 200 application/json;charset=utf-8
+INFO  2020-09-07 15:57:38,411 [36   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-07 15:57:38,428 [36   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 16.5874ms 200 application/json;charset=utf-8
